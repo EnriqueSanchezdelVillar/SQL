@@ -24,7 +24,15 @@ SELECT * FROM "NAME TABLE"  todos los campos
 
 $conexion= **mysqli_connect**(db_host,db_usuario,db_password,db_nombre);  
 $consulta=" SELECT *FROM "DATA NAME" ";  
-$resultados=**mysqli_query**($conexion,$consulta);
+$resultados=**mysqli_query**($conexion,$consulta);  
 $fila = **mysqli_fetch_row**($resultados);
+
+*Caso de no conectar a base de datos*
+
+if (mysqli_connect_errno())  {  
+		echo "Fallo pappi"  
+	exit  
+		
+		}  
 
 
