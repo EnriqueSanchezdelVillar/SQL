@@ -2,10 +2,14 @@
 course SQL
 
 *Crear database*  
-CREATE DATABASE "NAME"; 
+CREATE DATABASE "NAME";  
+
+*Crear table* 
 CREATE TABLE "NAME"("name campo" "tipo de dato","name campo2" "tipo de dato2");  
+
 *Quitar campo*
 ALTER TABLE "NAME TABLE" DROP "Name campo";  
+
 *Añadir campo* 
 ALTER TABLE "NAME TABLE" ADD "Name campo" "tipo de dato";  
 
@@ -18,6 +22,9 @@ SELECT * FROM "NAME TABLE"  todos los campos
 
 ### Conexión base de datos con php  
 
-$conexion=
-```diff + this will be highlighted in green
+$conexion= **mysqli_connect**(db_host,db_usuario,db_password,db_nombre);  
+$consulta=" SELECT *FROM "DATA NAME" ";  
+$resultados=**mysqli_query**($conexion,$consulta);
+$fila = **mysqli_fetch_row**($resultados);
+
 
