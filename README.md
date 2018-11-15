@@ -35,4 +35,23 @@ if (mysqli_connect_errno())  {
 		
 		}  
 
+*Consultar la bd*  
+conecta pero no la encuentra;
+	mysqli_select_db($conexion,$db_nombre) or die ("No se encuentra La BBDD");  
+
+pasar datos por pantalla  
+
+while(($fila=mysqli_fetch_row($resultados))==true){  
+	
+	
+	echo $fila[0];  
+	echo $fila[1];  
+	echo $fila[2];  
+	echo $fila[3];  
+	echo "<br>";  
+	}  
+
+
+mysqli_close(conexion);  
+
 
