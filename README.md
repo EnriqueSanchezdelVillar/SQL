@@ -33,7 +33,7 @@ if (mysqli_connect_errno())  {
 		echo "Fallo pappi"  
 	exit  
 		
-		}  
+		}
 
 *Consultar la bd*  
 conecta pero no la encuentra;
@@ -53,5 +53,13 @@ while(($fila=mysqli_fetch_row($resultados))==true){
 
 
 mysqli_close(conexion);  
+
+*Consultas*  
+{
+
+SELECT * FROM "TABLE NAME" WHERE "NOMBREFILA" LIKE '%CABALLERO'
+
+
+}
 
 
