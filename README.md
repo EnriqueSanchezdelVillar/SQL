@@ -56,7 +56,7 @@ mysqli_close(conexion);
 
 *Consultas*  
 {
-
+% sustituye a una cadena de caracteres  
 SELECT * FROM "TABLE NAME" WHERE "NOMBREFILA" LIKE '%CABALLERO'
 
 
