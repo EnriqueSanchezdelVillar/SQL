@@ -60,6 +60,16 @@ mysqli_close(conexion);
 SELECT * FROM "TABLE NAME" WHERE "NOMBREFILA" LIKE '%CABALLERO'
 
 
-}
+}  
+
+*Insertar*
+INSERT INTO "TABLE NAME" ("TABLE COLUMN","TABLE COLUMN2") VALUES("Valuetablecolumn1","Valuetablecolumn2");  
+
+*Eliminar de base de datos con un formulario*  
+DELETE FROM "TABLE NAME" WHERE "NOMBRE DE CAMPO"= "NOMBRE"  
+
+*UPDATE "TABLE NAME" SET "NOMBRE REGISTRO"='NUEVO NOMBRE'WHERE "NOMBRE CAMPO"='NAME'*  
+
+
 
 
