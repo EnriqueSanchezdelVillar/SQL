@@ -70,6 +70,27 @@ DELETE FROM "TABLE NAME" WHERE "NOMBRE DE CAMPO"= "NOMBRE"
 
 *UPDATE "TABLE NAME" SET "NOMBRE REGISTRO"='NUEVO NOMBRE'WHERE "NOMBRE CAMPO"='NAME'*  
 
+*Consultas preparadas evitando inyeccion SQL*  
+PASOS  
+1-> Crear funcion SQL   
+Select * FROM "TABLENAME" WHERE "nombre de campo" = ?; 
+2-->  
+$resultado = mysqli_prepare($conexion,$sql);  
+3-->  
+$ok = mysqli_stmt_bind_param($resultado, "s", $pais);  // si tiene exito true sino false  
+4-->  
+
+$ok=mysqli_smt_execute($resultado);  
+if($ok==false){  
+ echo "Ha fallado"  
+}  else{  
+$ok=mysqli_stm_bind_result($resultado, MISMO NUMERO DE PARAMETROS QUE LOS CAMPOS QUE HAY EN LA TABLA  ejemp ,$codigo, $pais , $años)  
+ 
+ while(mysqli_stmt_fetch($resultado)){  
+
+echo $codigo."" . $pais."".$numero.<br>;  
+}  
 
 
+}  
 
