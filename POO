@@ -1,0 +1,3 @@
+*Insertar base de datos*  
+
+$base =new PDO('mysql:host=localhost; dbname=NOMBRE','root','CONTRASEÑA');  
