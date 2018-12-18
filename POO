@@ -1,3 +1,13 @@
 *Insertar base de datos*  
 
 $base =new PDO('mysql:host=localhost; dbname=NOMBRE','root','CONTRASEÑA');  
+
+# Exception   
+try {  
+comando.....  
+echo 'Conexión ok'  
+} catch(Exception $e){  
+die('Error ' . $e->GetMessage());  
+}finally{  
+$base=null;  
+}   
